@@ -1,0 +1,128 @@
+{
+  "recorded_at_utc": "2026-11-25T08:11:39.111198+00:00",
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "os_name": "posix",
+  "develop": {
+    "http": [
+      {
+        "command": [
+          "curl",
+          "--silent",
+          "--show-error",
+          "--include",
+          "--max-time",
+          "5",
+          "-X",
+          "POST",
+          "http://127.0.0.1:8000/ask?question=Hello"
+        ],
+        "status": 200,
+        "output": "HTTP/1.1 200 OK\ndate: Wed, 25 Nov 2026 08:11:39 GMT\nserver: uvicorn\ncontent-length: 95\ncontent-type: application/json\n\n{\"answer\":\"Agent đang hoạt động tốt! (mock response) Hỏi thêm câu hỏi đi nhé.\"}"
+      },
+      {
+        "command": [
+          "curl",
+          "--silent",
+          "--show-error",
+          "--include",
+          "--max-time",
+          "5",
+          "-X",
+          "POST",
+          "-H",
+          "Content-Type: application/json",
+          "-d",
+          "{\"question\": \"Hello\"}",
+          "http://127.0.0.1:8000/ask"
+        ],
+        "status": 422,
+        "output": "HTTP/1.1 422 Unprocessable Content\ndate: Wed, 25 Nov 2026 08:11:39 GMT\nserver: uvicorn\ncontent-length: 94\ncontent-type: application/json\n\n{\"detail\":[{\"type\":\"missing\",\"loc\":[\"query\",\"question\"],\"msg\":\"Field required\",\"input\":null}]}"
+      },
+      {
+        "command": [
+          "curl",
+          "--silent",
+          "--show-error",
+          "--include",
+          "--max-time",
+          "5",
+          "http://127.0.0.1:8000/health"
+        ],
+        "status": 404,
+        "output": "HTTP/1.1 404 Not Found\ndate: Wed, 25 Nov 2026 08:11:39 GMT\nserver: uvicorn\ncontent-length: 22\ncontent-type: application/json\n\n{\"detail\":\"Not Found\"}"
+      }
+    ],
+    "application_shutdown_complete_logged": true,
+    "custom_shutdown_message_logged": false
+  },
+  "production": {
+    "http": [
+      {
+        "command": [
+          "curl",
+          "--silent",
+          "--show-error",
+          "--include",
+          "--max-time",
+          "5",
+          "-X",
+          "POST",
+          "-H",
+          "Content-Type: application/json",
+          "-d",
+          "{\"question\": \"Hello\"}",
+          "http://127.0.0.1:8000/ask"
+        ],
+        "status": 200,
+        "output": "HTTP/1.1 200 OK\ndate: Wed, 25 Nov 2026 08:11:40 GMT\nserver: uvicorn\ncontent-length: 144\ncontent-type: application/json\n\n{\"question\":\"Hello\",\"answer\":\"Tôi là AI agent được deploy lên cloud. Câu hỏi của bạn đã được nhận.\",\"model\":\"gpt-4o-mini\"}"
+      },
+      {
+        "command": [
+          "curl",
+          "--silent",
+          "--show-error",
+          "--include",
+          "--max-time",
+          "5",
+          "-X",
+          "POST",
+          "-H",
+          "Content-Type: application/json",
+          "-d",
+          "{}",
+          "http://127.0.0.1:8000/ask"
+        ],
+        "status": 422,
+        "output": "HTTP/1.1 422 Unprocessable Content\ndate: Wed, 25 Nov 2026 08:11:40 GMT\nserver: uvicorn\ncontent-length: 39\ncontent-type: application/json\n\n{\"detail\":\"question field is required\"}"
+      },
+      {
+        "command": [
+          "curl",
+          "--silent",
+          "--show-error",
+          "--include",
+          "--max-time",
+          "5",
+          "http://127.0.0.1:8000/health"
+        ],
+        "status": 200,
+        "output": "HTTP/1.1 200 OK\ndate: Wed, 25 Nov 2026 08:11:40 GMT\nserver: uvicorn\ncontent-length: 129\ncontent-type: application/json\n\n{\"status\":\"ok\",\"uptime_seconds\":0.4,\"version\":\"1.0.0\",\"environment\":\"development\",\"timestamp\":\"2026-11-25T08:11:41.264838+00:00\"}"
+      },
+      {
+        "command": [
+          "curl",
+          "--silent",
+          "--show-error",
+          "--include",
+          "--max-time",
+          "5",
+          "http://127.0.0.1:8000/ready"
+        ],
+        "status": 200,
+        "output": "HTTP/1.1 200 OK\ndate: Wed, 25 Nov 2026 08:11:40 GMT\nserver: uvicorn\ncontent-length: 14\ncontent-type: application/json\n\n{\"ready\":true}"
+      }
+    ],
+    "application_shutdown_complete_logged": true,
+    "custom_shutdown_message_logged": false
+  }
+}

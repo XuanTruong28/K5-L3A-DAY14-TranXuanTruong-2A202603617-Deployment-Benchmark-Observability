@@ -1,0 +1,17 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    153 100    153   0      0  23750      0                              0100    153 100    153   0      0  23545      0                              0100    153 100    153   0      0  23387      0                              0
+HTTP/1.1 404 Not Found
+Server: nginx/1.28.3
+Date: Wed, 25 Nov 2026 15:17:52 GMT
+Content-Type: text/html
+Content-Length: 153
+Connection: keep-alive
+
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx/1.28.3</center>
+</body>
+</html>

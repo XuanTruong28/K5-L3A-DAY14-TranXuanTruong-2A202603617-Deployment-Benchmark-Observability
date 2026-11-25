@@ -1,0 +1,10 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100     49 100     29 100     20   7643   5271                              0100     49 100     29 100     20   7390   5096                              0100     49 100     29 100     20   7302   5036                              0
+HTTP/1.1 403 Forbidden
+date: Wed, 25 Nov 2026 09:16:02 GMT
+server: uvicorn
+content-length: 29
+content-type: application/json
+
+{"detail":"Invalid API key."}

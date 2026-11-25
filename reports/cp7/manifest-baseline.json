@@ -1,0 +1,283 @@
+{
+  "phase": "baseline",
+  "started_at_utc": "2026-11-25T13:10:40.227539+00:00",
+  "python": "3.11.18 (main, Nov 24 2026, 16:57:34) [Clang 23.1.3 ]",
+  "kernel": "6.18.58.1-microsoft-standard-WSL2",
+  "linux": {
+    "NAME": "Ubuntu",
+    "ID": "ubuntu",
+    "PRETTY_NAME": "Ubuntu 26.04.1 LTS",
+    "VERSION_ID": "26.04",
+    "VERSION": "26.04.1 LTS (Resolute Raccoon)",
+    "VERSION_CODENAME": "resolute",
+    "ID_LIKE": "debian",
+    "HOME_URL": "https://www.ubuntu.com/",
+    "SUPPORT_URL": "https://help.ubuntu.com/",
+    "BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/",
+    "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+    "UBUNTU_CODENAME": "resolute",
+    "LOGO": "ubuntu-logo"
+  },
+  "cpu_count": 12,
+  "memory_bytes": 8202772480,
+  "dataset_sha256": "22e672344ef72779959f3cf480391cef247b2f8ce86415010ddea9b315e959ec",
+  "mock_llm_sha256": "e006f6588fb077b3492f6ef0aec0daaa8692e198ad6ed16e8ff290d72a499996",
+  "runs": [
+    {
+      "name": "load_v2_c1",
+      "started_at_utc": "2026-11-25T13:10:41.831604+00:00",
+      "command": [
+        "/home/twentysix/.venvs/k5-day14-part6/bin/python",
+        "load_test.py",
+        "--requests",
+        "300",
+        "--concurrency",
+        "1",
+        "--url",
+        "http://localhost:8002",
+        "--out",
+        "reports/load_v2_c1.json"
+      ],
+      "environment": {
+        "LLM_MODEL": "mock-llm-small",
+        "MOCK_LATENCY_MS": "120",
+        "MOCK_JITTER_MS": "60",
+        "MOCK_SLOW_MS": "1500",
+        "MOCK_RETRIEVAL_MS": "20",
+        "MOCK_SLOW_RATE": "0.03",
+        "MOCK_ERROR_RATE": "0.01",
+        "AGENT_VERSION": "v2",
+        "PORT": "8002"
+      },
+      "exit_code": 0,
+      "report_sha256": "c1b8b330d690e846acffe71d5e78eba1895d854246f224416d0febe2018364e1"
+    },
+    {
+      "name": "load_v2_c10",
+      "started_at_utc": "2026-11-25T13:12:00.026776+00:00",
+      "command": [
+        "/home/twentysix/.venvs/k5-day14-part6/bin/python",
+        "load_test.py",
+        "--requests",
+        "300",
+        "--concurrency",
+        "10",
+        "--url",
+        "http://localhost:8002",
+        "--out",
+        "reports/load_v2_c10.json"
+      ],
+      "environment": {
+        "LLM_MODEL": "mock-llm-small",
+        "MOCK_LATENCY_MS": "120",
+        "MOCK_JITTER_MS": "60",
+        "MOCK_SLOW_MS": "1500",
+        "MOCK_RETRIEVAL_MS": "20",
+        "MOCK_SLOW_RATE": "0.03",
+        "MOCK_ERROR_RATE": "0.01",
+        "AGENT_VERSION": "v2",
+        "PORT": "8002"
+      },
+      "exit_code": 0,
+      "report_sha256": "870fa1244cca27e5b5772c2b7e2483afa8106cba4c5f4c388167615e917ef371"
+    },
+    {
+      "name": "load_v2_c50",
+      "started_at_utc": "2026-11-25T13:12:08.325538+00:00",
+      "command": [
+        "/home/twentysix/.venvs/k5-day14-part6/bin/python",
+        "load_test.py",
+        "--requests",
+        "300",
+        "--concurrency",
+        "50",
+        "--url",
+        "http://localhost:8002",
+        "--out",
+        "reports/load_v2_c50.json"
+      ],
+      "environment": {
+        "LLM_MODEL": "mock-llm-small",
+        "MOCK_LATENCY_MS": "120",
+        "MOCK_JITTER_MS": "60",
+        "MOCK_SLOW_MS": "1500",
+        "MOCK_RETRIEVAL_MS": "20",
+        "MOCK_SLOW_RATE": "0.03",
+        "MOCK_ERROR_RATE": "0.01",
+        "AGENT_VERSION": "v2",
+        "PORT": "8002"
+      },
+      "exit_code": 0,
+      "report_sha256": "15046ae8240957d56c5feabf97342f4b22f4f143038b50b8a49402003c569ed9"
+    },
+    {
+      "name": "load_v2_c100",
+      "started_at_utc": "2026-11-25T13:12:12.481909+00:00",
+      "command": [
+        "/home/twentysix/.venvs/k5-day14-part6/bin/python",
+        "load_test.py",
+        "--requests",
+        "300",
+        "--concurrency",
+        "100",
+        "--url",
+        "http://localhost:8002",
+        "--out",
+        "reports/load_v2_c100.json"
+      ],
+      "environment": {
+        "LLM_MODEL": "mock-llm-small",
+        "MOCK_LATENCY_MS": "120",
+        "MOCK_JITTER_MS": "60",
+        "MOCK_SLOW_MS": "1500",
+        "MOCK_RETRIEVAL_MS": "20",
+        "MOCK_SLOW_RATE": "0.03",
+        "MOCK_ERROR_RATE": "0.01",
+        "AGENT_VERSION": "v2",
+        "PORT": "8002"
+      },
+      "exit_code": 1,
+      "report_sha256": "783b05148c61279ff245018e3f78c96d8390c9583a73a72f646118523caf2b45"
+    },
+    {
+      "name": "load_v2_slow_0",
+      "started_at_utc": "2026-11-25T13:12:19.780713+00:00",
+      "command": [
+        "/home/twentysix/.venvs/k5-day14-part6/bin/python",
+        "load_test.py",
+        "--requests",
+        "300",
+        "--concurrency",
+        "20",
+        "--url",
+        "http://localhost:8002",
+        "--out",
+        "reports/load_v2_slow_0.json"
+      ],
+      "environment": {
+        "LLM_MODEL": "mock-llm-small",
+        "MOCK_LATENCY_MS": "120",
+        "MOCK_JITTER_MS": "60",
+        "MOCK_SLOW_MS": "1500",
+        "MOCK_RETRIEVAL_MS": "20",
+        "MOCK_SLOW_RATE": "0",
+        "MOCK_ERROR_RATE": "0.01",
+        "AGENT_VERSION": "v2",
+        "PORT": "8002"
+      },
+      "exit_code": 0,
+      "report_sha256": "87ff2cd1cc43d645d2fc05f8e5bf84eeb9b137d317111d75809730a9d2bb592c"
+    },
+    {
+      "name": "load_v2_slow_0.03",
+      "started_at_utc": "2026-11-25T13:12:24.735738+00:00",
+      "command": [
+        "/home/twentysix/.venvs/k5-day14-part6/bin/python",
+        "load_test.py",
+        "--requests",
+        "300",
+        "--concurrency",
+        "20",
+        "--url",
+        "http://localhost:8002",
+        "--out",
+        "reports/load_v2_slow_0.03.json"
+      ],
+      "environment": {
+        "LLM_MODEL": "mock-llm-small",
+        "MOCK_LATENCY_MS": "120",
+        "MOCK_JITTER_MS": "60",
+        "MOCK_SLOW_MS": "1500",
+        "MOCK_RETRIEVAL_MS": "20",
+        "MOCK_SLOW_RATE": "0.03",
+        "MOCK_ERROR_RATE": "0.01",
+        "AGENT_VERSION": "v2",
+        "PORT": "8002"
+      },
+      "exit_code": 0,
+      "report_sha256": "5b49d360924be232c16426dd9c69dea2933237c5f034d15669c84a0885b0f602"
+    },
+    {
+      "name": "load_v2_slow_0.1",
+      "started_at_utc": "2026-11-25T13:12:31.101166+00:00",
+      "command": [
+        "/home/twentysix/.venvs/k5-day14-part6/bin/python",
+        "load_test.py",
+        "--requests",
+        "300",
+        "--concurrency",
+        "20",
+        "--url",
+        "http://localhost:8002",
+        "--out",
+        "reports/load_v2_slow_0.1.json"
+      ],
+      "environment": {
+        "LLM_MODEL": "mock-llm-small",
+        "MOCK_LATENCY_MS": "120",
+        "MOCK_JITTER_MS": "60",
+        "MOCK_SLOW_MS": "1500",
+        "MOCK_RETRIEVAL_MS": "20",
+        "MOCK_SLOW_RATE": "0.1",
+        "MOCK_ERROR_RATE": "0.01",
+        "AGENT_VERSION": "v2",
+        "PORT": "8002"
+      },
+      "exit_code": 1,
+      "report_sha256": "f3455a6f848a17f75f42d6f78e530d8cb9bcfcaae1d0d18a2ec4ce7989f0de7b"
+    },
+    {
+      "name": "eval_v1",
+      "started_at_utc": "2026-11-25T13:12:39.594522+00:00",
+      "command": [
+        "/home/twentysix/.venvs/k5-day14-part6/bin/python",
+        "eval/run_eval.py",
+        "--url",
+        "http://localhost:8001",
+        "--out",
+        "reports/eval_v1.json"
+      ],
+      "environment": {
+        "LLM_MODEL": "mock-llm-small",
+        "MOCK_LATENCY_MS": "120",
+        "MOCK_JITTER_MS": "60",
+        "MOCK_SLOW_MS": "1500",
+        "MOCK_RETRIEVAL_MS": "20",
+        "MOCK_SLOW_RATE": "0.03",
+        "MOCK_ERROR_RATE": "0",
+        "AGENT_VERSION": "v1",
+        "PORT": "8001"
+      },
+      "exit_code": 1,
+      "report_sha256": "d02bc171ff4211a20bd0a6079f26f0fa8cc64972f2e1f707703db5e944092d25"
+    },
+    {
+      "name": "eval_v2",
+      "started_at_utc": "2026-11-25T13:12:44.698659+00:00",
+      "command": [
+        "/home/twentysix/.venvs/k5-day14-part6/bin/python",
+        "eval/run_eval.py",
+        "--baseline",
+        "reports/eval_v1.json",
+        "--url",
+        "http://localhost:8002",
+        "--out",
+        "reports/eval_v2.json"
+      ],
+      "environment": {
+        "LLM_MODEL": "mock-llm-small",
+        "MOCK_LATENCY_MS": "120",
+        "MOCK_JITTER_MS": "60",
+        "MOCK_SLOW_MS": "1500",
+        "MOCK_RETRIEVAL_MS": "20",
+        "MOCK_SLOW_RATE": "0.03",
+        "MOCK_ERROR_RATE": "0",
+        "AGENT_VERSION": "v2",
+        "PORT": "8002"
+      },
+      "exit_code": 0,
+      "report_sha256": "c5f097cc71999d4128e885c8c1d7f5a2e19027ed23af6eabc5d9f68d8958f139"
+    }
+  ],
+  "completed_at_utc": "2026-11-25T13:12:51.159786+00:00"
+}

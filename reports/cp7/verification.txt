@@ -1,0 +1,58 @@
+VERIFIED: Golden dataset hash unchanged before/after runs
+VERIFIED: Grader, golden dataset, load/eval tools untouched
+VERIFIED: Baseline used old KB and final used current updated KB
+VERIFIED: load_v2_c1: actual-run hash equals submitted copy
+VERIFIED: load_v2_c1: 300 actual requests accounted for
+VERIFIED: load_v2_c1: correct v2 agent and port
+VERIFIED: load_v2_c1: real gate and exit code agree
+VERIFIED: load_v2_c1: correct concurrency and default slow rate
+VERIFIED: load_v2_c1: report table equals JSON
+VERIFIED: load_v2_c10: actual-run hash equals submitted copy
+VERIFIED: load_v2_c10: 300 actual requests accounted for
+VERIFIED: load_v2_c10: correct v2 agent and port
+VERIFIED: load_v2_c10: real gate and exit code agree
+VERIFIED: load_v2_c10: correct concurrency and default slow rate
+VERIFIED: load_v2_c10: report table equals JSON
+VERIFIED: load_v2_c50: actual-run hash equals submitted copy
+VERIFIED: load_v2_c50: 300 actual requests accounted for
+VERIFIED: load_v2_c50: correct v2 agent and port
+VERIFIED: load_v2_c50: real gate and exit code agree
+VERIFIED: load_v2_c50: correct concurrency and default slow rate
+VERIFIED: load_v2_c50: report table equals JSON
+VERIFIED: load_v2_c100: actual-run hash equals submitted copy
+VERIFIED: load_v2_c100: 300 actual requests accounted for
+VERIFIED: load_v2_c100: correct v2 agent and port
+VERIFIED: load_v2_c100: real gate and exit code agree
+VERIFIED: load_v2_c100: correct concurrency and default slow rate
+VERIFIED: load_v2_c100: report table equals JSON
+VERIFIED: load_v2_slow_0: actual-run hash equals submitted copy
+VERIFIED: load_v2_slow_0: 300 actual requests accounted for
+VERIFIED: load_v2_slow_0: correct v2 agent and port
+VERIFIED: load_v2_slow_0: real gate and exit code agree
+VERIFIED: load_v2_slow_0: controlled slow-rate at concurrency 20
+VERIFIED: load_v2_slow_0: report table equals JSON
+VERIFIED: load_v2_slow_0.03: actual-run hash equals submitted copy
+VERIFIED: load_v2_slow_0.03: 300 actual requests accounted for
+VERIFIED: load_v2_slow_0.03: correct v2 agent and port
+VERIFIED: load_v2_slow_0.03: real gate and exit code agree
+VERIFIED: load_v2_slow_0.03: controlled slow-rate at concurrency 20
+VERIFIED: load_v2_slow_0.03: report table equals JSON
+VERIFIED: load_v2_slow_0.1: actual-run hash equals submitted copy
+VERIFIED: load_v2_slow_0.1: 300 actual requests accounted for
+VERIFIED: load_v2_slow_0.1: correct v2 agent and port
+VERIFIED: load_v2_slow_0.1: real gate and exit code agree
+VERIFIED: load_v2_slow_0.1: controlled slow-rate at concurrency 20
+VERIFIED: load_v2_slow_0.1: report table equals JSON
+VERIFIED: eval_v1: actual-run hash equals submitted copy
+VERIFIED: eval_v1: all 23 golden IDs evaluated without HTTP errors
+VERIFIED: eval_v2: actual-run hash equals submitted copy
+VERIFIED: eval_v2: all 23 golden IDs evaluated without HTTP errors
+VERIFIED: eval_v2_fixed: actual-run hash equals submitted copy
+VERIFIED: eval_v2_fixed: all 23 golden IDs evaluated without HTTP errors
+VERIFIED: Final v2 strict gate PASS, 23/23, no regression
+VERIFIED: CI workflow exists and equivalent local gate passed; no GitHub run claimed
+VERIFIED: Histogram wired before LLM and observed on live request
+VERIFIED: Two unknown URLs aggregate under unmatched label
+VERIFIED: Owned local agent stopped: 8001
+VERIFIED: Owned local agent stopped: 8002
+PASSED: CP7 acceptance verified. CP8 remains out of scope.

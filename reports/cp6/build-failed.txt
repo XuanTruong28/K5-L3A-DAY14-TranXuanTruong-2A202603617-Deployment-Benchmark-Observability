@@ -1,0 +1,67 @@
+fetched snapshot sha256:7025f95ed40875b5c88e748614ca10844b178fa7077865409b8134bdf04c99c2 (64 kB bytes)
+[INFO] fetching snapshot
+[INFO] unpacking archive
+[INFO] [internal] load build definition from Dockerfile
+[INFO] [internal] load build definition from Dockerfile
+[INFO] [internal] load build definition from Dockerfile
+[INFO] [internal] load build definition from Dockerfile
+[INFO] [internal] load metadata for docker.io/library/python:3.11-slim
+[INFO] [internal] load metadata for docker.io/library/python:3.11-slim
+[INFO] [internal] load .dockerignore
+[INFO] [internal] load .dockerignore
+[INFO] [internal] load .dockerignore
+[INFO] [internal] load .dockerignore
+[INFO] [runtime 5/6] COPY --chown=appuser:appuser app ./app
+[INFO] [runtime 4/6] COPY --from=builder /opt/venv /opt/venv
+[INFO] [builder 5/5] RUN /opt/venv/bin/pip install --no-cache-dir -r requirements.txt
+[INFO] [builder 4/5] COPY requirements.txt .
+[INFO] [internal] load build context
+[INFO] [builder 3/5] RUN python -m venv /opt/venv
+[INFO] [builder 2/5] WORKDIR /build
+[INFO] [runtime 3/6] WORKDIR /app
+[INFO] [runtime 2/6] RUN useradd --create-home --uid 10001 appuser
+[INFO] [builder 1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+[INFO] importing cache manifest from s3:9030405925439967209
+[INFO] [runtime 6/6] COPY --chown=appuser:appuser utils ./utils
+[INFO] [internal] load build context
+[INFO] [builder 1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+[INFO] [builder 1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+[INFO] importing cache manifest from s3:9030405925439967209
+[INFO] [internal] load build context
+[INFO] [builder 1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+[INFO] [builder 1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+[INFO] [builder 1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+[INFO] [internal] load build context
+[INFO] [builder 1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+[INFO] [builder 1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+[INFO] [builder 1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+[INFO] [builder 1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+[INFO] [builder 1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+[INFO] [builder 1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+[INFO] [builder 1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+[INFO] [builder 1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+[INFO] [builder 1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+[INFO] [builder 1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+[INFO] [builder 1/5] FROM docker.io/library/python:3.11-slim@sha256:61e01f72680f86a5279ad510818ab7b2ee9f049822589d4e34e33e044360356c
+[INFO] [runtime 2/6] RUN useradd --create-home --uid 10001 appuser
+[INFO] [builder 2/5] WORKDIR /build
+[INFO] [builder 2/5] WORKDIR /build
+[INFO] [builder 3/5] RUN python -m venv /opt/venv
+[INFO] [runtime 2/6] RUN useradd --create-home --uid 10001 appuser
+[INFO] [runtime 3/6] WORKDIR /app
+[INFO] [runtime 3/6] WORKDIR /app
+[INFO] [builder 3/5] RUN python -m venv /opt/venv
+[INFO] [builder 4/5] COPY requirements.txt .
+[INFO] [builder 4/5] COPY requirements.txt .
+[INFO] [builder 5/5] RUN /opt/venv/bin/pip install --no-cache-dir -r requirements.txt
+[INFO] ERROR: Invalid requirement: '\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00' (from line 1 of requirements.txt)
+
+[INFO] 
+[notice] A new release of pip is available: 24.0 -> 26.3
+[notice] To update, run: python -m pip install --upgrade pip
+
+[ERRO] [builder 5/5] RUN /opt/venv/bin/pip install --no-cache-dir -r requirements.txt
+Build Failed: build daemon returned an error < failed to solve: process "/bin/sh -c /opt/venv/bin/pip install --no-cache-dir -r requirements.txt" did not complete successfully: exit code: 1 >
+warning: Config as Code (railway.json / railway.toml) is deprecated. Prefer Infrastructure as Code (.railway/railway.ts). Run `railway config migrate` or see https://docs.railway.com/infrastructure-as-code#migrating-from-config-as-code
+  → Migrate: `railway config migrate` — https://docs.railway.com/infrastructure-as-code#migrating-from-config-as-code
+  Existing files keep working until 2026-12-01.

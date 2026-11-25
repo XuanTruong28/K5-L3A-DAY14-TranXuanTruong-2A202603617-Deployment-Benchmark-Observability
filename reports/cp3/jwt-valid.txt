@@ -1,0 +1,14 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    210 100    184 100     26   1571    222                              0100    210 100    184 100     26   1568    221                              0100    210 100    184 100     26   1568    221                              0
+HTTP/1.1 200 OK
+date: Wed, 25 Nov 2026 09:17:02 GMT
+server: uvicorn
+content-length: 184
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"question":"Explain JWT","answer":"Agent đang hoạt động tốt! (mock response) Hỏi thêm câu hỏi đi nhé.","usage":{"requests_remaining":9,"budget_remaining_usd":1.6e-05}}

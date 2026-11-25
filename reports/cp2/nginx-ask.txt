@@ -1,0 +1,14 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    162 100    126 100     36   1123    321                              0100    162 100    126 100     36   1123    320                              0100    162 100    126 100     36   1123    320                              0
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 25 Nov 2026 08:55:32 GMT
+Content-Type: application/json
+Content-Length: 126
+Connection: keep-alive
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+
+{"answer":"Đây là câu trả lời từ AI agent (mock). Trong production, đây sẽ là response từ OpenAI/Anthropic."}

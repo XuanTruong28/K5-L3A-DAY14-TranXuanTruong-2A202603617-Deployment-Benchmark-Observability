@@ -1,0 +1,61 @@
+agent-3  | ✅ Connected to Redis
+agent-3  | INFO:     Started server process [1]
+agent-3  | INFO:     Waiting for application startup.
+agent-3  | INFO:app:Starting instance instance-42585e
+agent-3  | INFO:app:Storage: Redis ✅
+agent-3  | INFO:     Application startup complete.
+agent-3  | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+agent-3  | INFO:     127.0.0.1:58886 - "GET /health HTTP/1.1" 200 OK
+agent-3  | INFO:     127.0.0.1:49106 - "GET /health HTTP/1.1" 200 OK
+agent-3  | INFO:     172.19.0.6:55212 - "GET /health HTTP/1.1" 200 OK
+agent-3  | INFO:     127.0.0.1:52336 - "GET /health HTTP/1.1" 200 OK
+agent-3  | INFO:     127.0.0.1:51270 - "GET /health HTTP/1.1" 200 OK
+agent-3  | INFO:     172.19.0.6:34956 - "POST /chat HTTP/1.1" 200 OK
+agent-3  | INFO:     172.19.0.6:34956 - "GET /chat/b65d0cd8-9507-4b0f-ae5d-f1f26e5153b6/history HTTP/1.1" 200 OK
+agent-3  | INFO:     127.0.0.1:56552 - "GET /health HTTP/1.1" 200 OK
+agent-3  | INFO:     127.0.0.1:52984 - "GET /health HTTP/1.1" 200 OK
+agent-3  | INFO:     127.0.0.1:41354 - "GET /health HTTP/1.1" 200 OK
+agent-3  | INFO:     127.0.0.1:49852 - "GET /health HTTP/1.1" 200 OK
+agent-3  | INFO:     127.0.0.1:43188 - "GET /health HTTP/1.1" 200 OK
+agent-3  | INFO:     127.0.0.1:39602 - "GET /health HTTP/1.1" 200 OK
+agent-3  | INFO:     127.0.0.1:59700 - "GET /health HTTP/1.1" 200 OK
+agent-1  | ✅ Connected to Redis
+agent-1  | INFO:     Started server process [1]
+agent-1  | INFO:     Waiting for application startup.
+agent-1  | INFO:app:Starting instance instance-871566
+agent-1  | INFO:app:Storage: Redis ✅
+agent-1  | INFO:     Application startup complete.
+agent-1  | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+agent-1  | INFO:     127.0.0.1:58870 - "GET /health HTTP/1.1" 200 OK
+agent-1  | INFO:     127.0.0.1:49086 - "GET /health HTTP/1.1" 200 OK
+agent-1  | INFO:     127.0.0.1:52318 - "GET /health HTTP/1.1" 200 OK
+agent-1  | INFO:     127.0.0.1:51260 - "GET /health HTTP/1.1" 200 OK
+agent-1  | INFO:     172.19.0.6:42694 - "POST /chat HTTP/1.1" 200 OK
+agent-1  | INFO:     172.19.0.6:42694 - "POST /chat HTTP/1.1" 200 OK
+agent-1  | INFO:     127.0.0.1:44290 - "GET /health HTTP/1.1" 200 OK
+agent-1  | INFO:     127.0.0.1:52958 - "GET /health HTTP/1.1" 200 OK
+agent-1  | INFO:     127.0.0.1:41342 - "GET /health HTTP/1.1" 200 OK
+agent-1  | INFO:     127.0.0.1:49834 - "GET /health HTTP/1.1" 200 OK
+agent-1  | INFO:     127.0.0.1:43170 - "GET /health HTTP/1.1" 200 OK
+agent-1  | INFO:     127.0.0.1:39594 - "GET /health HTTP/1.1" 200 OK
+agent-1  | INFO:     127.0.0.1:59670 - "GET /health HTTP/1.1" 200 OK
+agent-2  | ✅ Connected to Redis
+agent-2  | INFO:     Started server process [1]
+agent-2  | INFO:     Waiting for application startup.
+agent-2  | INFO:app:Starting instance instance-5d1532
+agent-2  | INFO:app:Storage: Redis ✅
+agent-2  | INFO:     Application startup complete.
+agent-2  | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+agent-2  | INFO:     127.0.0.1:58878 - "GET /health HTTP/1.1" 200 OK
+agent-2  | INFO:     127.0.0.1:49098 - "GET /health HTTP/1.1" 200 OK
+agent-2  | INFO:     127.0.0.1:52334 - "GET /health HTTP/1.1" 200 OK
+agent-2  | INFO:     127.0.0.1:51266 - "GET /health HTTP/1.1" 200 OK
+agent-2  | INFO:     172.19.0.6:47282 - "POST /chat HTTP/1.1" 200 OK
+agent-2  | INFO:     172.19.0.6:47282 - "POST /chat HTTP/1.1" 200 OK
+agent-2  | INFO:     127.0.0.1:44292 - "GET /health HTTP/1.1" 200 OK
+agent-2  | INFO:     127.0.0.1:52968 - "GET /health HTTP/1.1" 200 OK
+agent-2  | INFO:     127.0.0.1:41348 - "GET /health HTTP/1.1" 200 OK
+agent-2  | INFO:     127.0.0.1:49848 - "GET /health HTTP/1.1" 200 OK
+agent-2  | INFO:     127.0.0.1:43180 - "GET /health HTTP/1.1" 200 OK
+agent-2  | INFO:     127.0.0.1:39600 - "GET /health HTTP/1.1" 200 OK
+agent-2  | INFO:     127.0.0.1:59686 - "GET /health HTTP/1.1" 200 OK

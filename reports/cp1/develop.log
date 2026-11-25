@@ -1,0 +1,18 @@
+Starting agent on localhost:8000...
+INFO:     Will watch for changes in these directories: ['/mnt/d/LAB AI/lab14/K5-L3A-DAY14-TranXuanTruong-2A202603617-Deployment-Benchmark-Observability/01-localhost-vs-production/develop']
+INFO:     Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [1630] using WatchFiles
+INFO:     Started server process [1632]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+[DEBUG] Got question: Hello
+[DEBUG] Using key: [REDACTED sample key]
+[DEBUG] Response: Agent đang hoạt động tốt! (mock response) Hỏi thêm câu hỏi đi nhé.
+INFO:     127.0.0.1:37074 - "POST /ask?question=Hello HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37090 - "POST /ask HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:37104 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1632]
+INFO:     Stopping reloader process [1630]

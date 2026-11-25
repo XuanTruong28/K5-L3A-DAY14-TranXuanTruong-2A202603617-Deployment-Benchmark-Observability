@@ -1,0 +1,10 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    142 100    122 100     20    796    130                              0100    142 100    122 100     20    795    130                              0100    142 100    122 100     20    795    130                              0
+HTTP/1.1 200 OK
+date: Wed, 25 Nov 2026 09:15:31 GMT
+server: uvicorn
+content-length: 122
+content-type: application/json
+
+{"question":"Hello","answer":"Tôi là AI agent được deploy lên cloud. Câu hỏi của bạn đã được nhận."}

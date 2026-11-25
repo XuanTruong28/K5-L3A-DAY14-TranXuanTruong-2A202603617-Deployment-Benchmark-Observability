@@ -1,0 +1,59 @@
+
+🧪 Eval agent tại http://localhost:8002
+
+  ✅ basic-01         score=1.00    160.0ms
+  ✅ docker-01        score=1.00    214.1ms
+  ✅ docker-02        score=1.00    203.8ms
+  ✅ probe-01         score=1.00    190.2ms
+  ✅ probe-02         score=1.00    199.3ms
+  ✅ reliability-01   score=1.00    177.3ms
+  ✅ config-01        score=1.00    193.3ms
+  ✅ security-01      score=1.00    173.4ms
+  ❌ security-02      score=0.00    180.6ms
+  ✅ scaling-01       score=1.00   1678.9ms
+  ✅ scaling-02       score=1.00    186.0ms
+  ❌ scaling-03       score=0.00    211.8ms
+  ✅ bench-01         score=1.00    168.5ms
+  ✅ bench-02         score=1.00    225.3ms
+  ✅ obs-01           score=1.00    212.0ms
+  ✅ obs-02           score=1.00    191.7ms
+  ✅ obs-03           score=1.00    192.9ms
+  ✅ obs-04           score=1.00    222.8ms
+  ✅ obs-05           score=1.00    175.2ms
+  ✅ obs-06           score=1.00    178.2ms
+  ✅ slo-01           score=1.00    181.2ms
+  ✅ cost-01          score=1.00    167.7ms
+  ✅ cloud-01         score=1.00    171.7ms
+
+══════════════════════════════════════════════════════════
+  EVAL REPORT — agent v2
+══════════════════════════════════════════════════════════
+  Accuracy      : 91.3%  (21/23)
+  Errors        : 0
+  Latency (ms)  : p50=190.2  p95=225.1
+  Avg tokens    : 108.8
+  Total cost    : $0.000757   (cost / câu đúng: $0.00003607)
+  Theo category :
+    - benchmark      3/3  (100%)
+    - cost           1/1  (100%)
+    - deployment     3/3  (100%)
+    - docker         2/2  (100%)
+    - observability  6/6  (100%)
+    - reliability    3/3  (100%)
+    - scaling        2/3  (67%)
+    - security       1/2  (50%)
+
+  📊 So sánh với baseline (agent v1)
+  Chỉ số                    Baseline    Hiện tại        Thay đổi
+  Accuracy                      4.3%       91.3%    +87.0 điểm %
+  Latency p95 (ms)             187.9       225.1           +37.2
+  Avg tokens / câu              56.7       108.8           +52.1
+  Tổng cost (USD)           0.000399    0.000757       +0.000358
+
+  ✨ Câu được cải thiện : 20
+  ⚠️  Câu bị regression : 0 
+──────────────────────────────────────────────────────────
+  Quality gate (accuracy ≥ 80%, không regression): ✅ PASS
+══════════════════════════════════════════════════════════
+
+💾 Đã lưu report: reports/eval_v2.json

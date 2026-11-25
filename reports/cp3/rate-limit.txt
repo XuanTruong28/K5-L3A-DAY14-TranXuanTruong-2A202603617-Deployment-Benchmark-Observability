@@ -1,0 +1,364 @@
+
+--- Request 1 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    208 100    187 100     21   1362    152                              0100    208 100    187 100     21   1361    152                              0100    208 100    187 100     21   1360    152                              0
+HTTP/1.1 200 OK
+date: Wed, 25 Nov 2026 09:17:23 GMT
+server: uvicorn
+content-length: 187
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"question":"Test 1","answer":"Tôi là AI agent được deploy lên cloud. Câu hỏi của bạn đã được nhận.","usage":{"requests_remaining":8,"budget_remaining_usd":3.5e-05}}
+
+--- Request 2 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    208 100    187 100     21   1259    141                              0100    208 100    187 100     21   1258    141                              0100    208 100    187 100     21   1257    141                              0
+HTTP/1.1 200 OK
+date: Wed, 25 Nov 2026 09:17:23 GMT
+server: uvicorn
+content-length: 187
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"question":"Test 2","answer":"Tôi là AI agent được deploy lên cloud. Câu hỏi của bạn đã được nhận.","usage":{"requests_remaining":7,"budget_remaining_usd":5.3e-05}}
+
+--- Request 3 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    231 100    210 100     21   1484    148                              0100    231 100    210 100     21   1483    148                              0100    231 100    210 100     21   1482    148                              0
+HTTP/1.1 200 OK
+date: Wed, 25 Nov 2026 09:17:23 GMT
+server: uvicorn
+content-length: 210
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"question":"Test 3","answer":"Đây là câu trả lời từ AI agent (mock). Trong production, đây sẽ là response từ OpenAI/Anthropic.","usage":{"requests_remaining":6,"budget_remaining_usd":7.4e-05}}
+
+--- Request 4 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    200 100    179 100     21   1563    183                              0100    200 100    179 100     21   1561    183                              0100    200 100    179 100     21   1560    183                              0
+HTTP/1.1 200 OK
+date: Wed, 25 Nov 2026 09:17:23 GMT
+server: uvicorn
+content-length: 179
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"question":"Test 4","answer":"Agent đang hoạt động tốt! (mock response) Hỏi thêm câu hỏi đi nhé.","usage":{"requests_remaining":5,"budget_remaining_usd":9.1e-05}}
+
+--- Request 5 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    201 100    180 100     21   1344    156                              0100    201 100    180 100     21   1343    156                              0100    201 100    180 100     21   1342    156                              0
+HTTP/1.1 200 OK
+date: Wed, 25 Nov 2026 09:17:23 GMT
+server: uvicorn
+content-length: 180
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"question":"Test 5","answer":"Agent đang hoạt động tốt! (mock response) Hỏi thêm câu hỏi đi nhé.","usage":{"requests_remaining":4,"budget_remaining_usd":0.000107}}
+
+--- Request 6 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    201 100    180 100     21   1666    194                              0100    201 100    180 100     21   1665    194                              0100    201 100    180 100     21   1664    194                              0
+HTTP/1.1 200 OK
+date: Wed, 25 Nov 2026 09:17:25 GMT
+server: uvicorn
+content-length: 180
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"question":"Test 6","answer":"Agent đang hoạt động tốt! (mock response) Hỏi thêm câu hỏi đi nhé.","usage":{"requests_remaining":3,"budget_remaining_usd":0.000123}}
+
+--- Request 7 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    201 100    180 100     21   1399    163                              0100    201 100    180 100     21   1397    163                              0100    201 100    180 100     21   1396    162                              0
+HTTP/1.1 200 OK
+date: Wed, 25 Nov 2026 09:17:25 GMT
+server: uvicorn
+content-length: 180
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"question":"Test 7","answer":"Agent đang hoạt động tốt! (mock response) Hỏi thêm câu hỏi đi nhé.","usage":{"requests_remaining":2,"budget_remaining_usd":0.000139}}
+
+--- Request 8 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    231 100    210 100     21   1858    185                              0100    231 100    210 100     21   1855    185                              0100    231 100    210 100     21   1853    185                              0
+HTTP/1.1 200 OK
+date: Wed, 25 Nov 2026 09:17:25 GMT
+server: uvicorn
+content-length: 210
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"question":"Test 8","answer":"Đây là câu trả lời từ AI agent (mock). Trong production, đây sẽ là response từ OpenAI/Anthropic.","usage":{"requests_remaining":1,"budget_remaining_usd":0.00016}}
+
+--- Request 9 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    232 100    211 100     21   1611    160                              0100    232 100    211 100     21   1610    160                              0100    232 100    211 100     21   1610    160                              0
+HTTP/1.1 200 OK
+date: Wed, 25 Nov 2026 09:17:25 GMT
+server: uvicorn
+content-length: 211
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"question":"Test 9","answer":"Đây là câu trả lời từ AI agent (mock). Trong production, đây sẽ là response từ OpenAI/Anthropic.","usage":{"requests_remaining":0,"budget_remaining_usd":0.000181}}
+
+--- Request 10 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    120 100     98 100     22  29314   6580                              0100    120 100     98 100     22  28488   6395                              0100    120 100     98 100     22  28274   6347                              0
+HTTP/1.1 429 Too Many Requests
+date: Wed, 25 Nov 2026 09:17:25 GMT
+server: uvicorn
+x-ratelimit-limit: 10
+x-ratelimit-remaining: 0
+x-ratelimit-reset: 1795598305
+retry-after: 38
+content-length: 98
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"detail":{"error":"Rate limit exceeded","limit":10,"window_seconds":60,"retry_after_seconds":38}}
+
+--- Request 11 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    120 100     98 100     22  29987   6731                              0100    120 100     98 100     22  29245   6565                              0100    120 100     98 100     22  28951   6499                              0
+HTTP/1.1 429 Too Many Requests
+date: Wed, 25 Nov 2026 09:17:25 GMT
+server: uvicorn
+x-ratelimit-limit: 10
+x-ratelimit-remaining: 0
+x-ratelimit-reset: 1795598305
+retry-after: 38
+content-length: 98
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"detail":{"error":"Rate limit exceeded","limit":10,"window_seconds":60,"retry_after_seconds":38}}
+
+--- Request 12 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    120 100     98 100     22  21346   4791                              0100    120 100     98 100     22  21107   4738                              0100    120 100     98 100     22  21003   4714                              0
+HTTP/1.1 429 Too Many Requests
+date: Wed, 25 Nov 2026 09:17:25 GMT
+server: uvicorn
+x-ratelimit-limit: 10
+x-ratelimit-remaining: 0
+x-ratelimit-reset: 1795598305
+retry-after: 38
+content-length: 98
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"detail":{"error":"Rate limit exceeded","limit":10,"window_seconds":60,"retry_after_seconds":38}}
+
+--- Request 13 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    120 100     98 100     22  26415   5929                              0100    120 100     98 100     22  25789   5789                              0100    120 100     98 100     22  25534   5732                              0
+HTTP/1.1 429 Too Many Requests
+date: Wed, 25 Nov 2026 09:17:25 GMT
+server: uvicorn
+x-ratelimit-limit: 10
+x-ratelimit-remaining: 0
+x-ratelimit-reset: 1795598305
+retry-after: 38
+content-length: 98
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"detail":{"error":"Rate limit exceeded","limit":10,"window_seconds":60,"retry_after_seconds":38}}
+
+--- Request 14 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    120 100     98 100     22  20583   4620                              0100    120 100     98 100     22  20310   4559                              0100    120 100     98 100     22  20193   4533                              0
+HTTP/1.1 429 Too Many Requests
+date: Wed, 25 Nov 2026 09:17:25 GMT
+server: uvicorn
+x-ratelimit-limit: 10
+x-ratelimit-remaining: 0
+x-ratelimit-reset: 1795598305
+retry-after: 38
+content-length: 98
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"detail":{"error":"Rate limit exceeded","limit":10,"window_seconds":60,"retry_after_seconds":38}}
+
+--- Request 15 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    120 100     98 100     22  20899   4691                              0100    120 100     98 100     22  20545   4612                              0100    120 100     98 100     22  20399   4579                              0
+HTTP/1.1 429 Too Many Requests
+date: Wed, 25 Nov 2026 09:17:25 GMT
+server: uvicorn
+x-ratelimit-limit: 10
+x-ratelimit-remaining: 0
+x-ratelimit-reset: 1795598305
+retry-after: 38
+content-length: 98
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"detail":{"error":"Rate limit exceeded","limit":10,"window_seconds":60,"retry_after_seconds":38}}
+
+--- Request 16 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    120 100     98 100     22  23118   5189                              0100    120 100     98 100     22  22685   5092                              0100    120 100     98 100     22  22430   5035                              0
+HTTP/1.1 429 Too Many Requests
+date: Wed, 25 Nov 2026 09:17:25 GMT
+server: uvicorn
+x-ratelimit-limit: 10
+x-ratelimit-remaining: 0
+x-ratelimit-reset: 1795598305
+retry-after: 38
+content-length: 98
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"detail":{"error":"Rate limit exceeded","limit":10,"window_seconds":60,"retry_after_seconds":38}}
+
+--- Request 17 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    120 100     98 100     22  25322   5684                              0100    120 100     98 100     22  24879   5585                              0100    120 100     98 100     22  24691   5542                              0
+HTTP/1.1 429 Too Many Requests
+date: Wed, 25 Nov 2026 09:17:25 GMT
+server: uvicorn
+x-ratelimit-limit: 10
+x-ratelimit-remaining: 0
+x-ratelimit-reset: 1795598305
+retry-after: 38
+content-length: 98
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"detail":{"error":"Rate limit exceeded","limit":10,"window_seconds":60,"retry_after_seconds":38}}
+
+--- Request 18 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    120 100     98 100     22  24961   5603                              0100    120 100     98 100     22  24524   5505                              0100    120 100     98 100     22  24323   5460                              0
+HTTP/1.1 429 Too Many Requests
+date: Wed, 25 Nov 2026 09:17:25 GMT
+server: uvicorn
+x-ratelimit-limit: 10
+x-ratelimit-remaining: 0
+x-ratelimit-reset: 1795598305
+retry-after: 37
+content-length: 98
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"detail":{"error":"Rate limit exceeded","limit":10,"window_seconds":60,"retry_after_seconds":37}}
+
+--- Request 19 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    120 100     98 100     22  20833   4676                              0100    120 100     98 100     22  20298   4556                              0100    120 100     98 100     22  20135   4520                              0
+HTTP/1.1 429 Too Many Requests
+date: Wed, 25 Nov 2026 09:17:25 GMT
+server: uvicorn
+x-ratelimit-limit: 10
+x-ratelimit-remaining: 0
+x-ratelimit-reset: 1795598305
+retry-after: 37
+content-length: 98
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"detail":{"error":"Rate limit exceeded","limit":10,"window_seconds":60,"retry_after_seconds":37}}
+
+--- Request 20 ---
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    120 100     98 100     22  16355   3671                              0100    120 100     98 100     22  15632   3509                              0100    120 100     98 100     22  15513   3482                              0
+HTTP/1.1 429 Too Many Requests
+date: Wed, 25 Nov 2026 09:17:25 GMT
+server: uvicorn
+x-ratelimit-limit: 10
+x-ratelimit-remaining: 0
+x-ratelimit-reset: 1795598305
+retry-after: 37
+content-length: 98
+content-type: application/json
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 1; mode=block
+referrer-policy: strict-origin-when-cross-origin
+
+{"detail":{"error":"Rate limit exceeded","limit":10,"window_seconds":60,"retry_after_seconds":37}}

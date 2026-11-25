@@ -1,0 +1,13 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100     80 100     80   0      0   6314      0                              0100     80 100     80   0      0   6251      0                              0100     80 100     80   0      0   6223      0                              0
+HTTP/1.1 200 OK
+Server: nginx/1.28.3
+Date: Wed, 25 Nov 2026 13:45:39 GMT
+Content-Type: application/json
+Content-Length: 80
+Connection: keep-alive
+x-request-id: 307dda11f4fd
+X-Served-By: 172.19.0.5:8000
+
+{"status":"ok","version":"1.0.0","agent_version":"v2","instance":"f58eefdebd89"}

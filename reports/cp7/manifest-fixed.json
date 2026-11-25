@@ -1,0 +1,86 @@
+{
+  "phase": "fixed",
+  "started_at_utc": "2026-11-25T13:13:23.075300+00:00",
+  "python": "3.11.18 (main, Nov 24 2026, 16:57:34) [Clang 23.1.3 ]",
+  "kernel": "6.18.58.1-microsoft-standard-WSL2",
+  "linux": {
+    "NAME": "Ubuntu",
+    "ID": "ubuntu",
+    "PRETTY_NAME": "Ubuntu 26.04.1 LTS",
+    "VERSION_ID": "26.04",
+    "VERSION": "26.04.1 LTS (Resolute Raccoon)",
+    "VERSION_CODENAME": "resolute",
+    "ID_LIKE": "debian",
+    "HOME_URL": "https://www.ubuntu.com/",
+    "SUPPORT_URL": "https://help.ubuntu.com/",
+    "BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/",
+    "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+    "UBUNTU_CODENAME": "resolute",
+    "LOGO": "ubuntu-logo"
+  },
+  "cpu_count": 12,
+  "memory_bytes": 8202772480,
+  "dataset_sha256": "22e672344ef72779959f3cf480391cef247b2f8ce86415010ddea9b315e959ec",
+  "mock_llm_sha256": "7361da533b138852507d75adbdfe6f29bd36789366a3805c5ff008fda724a652",
+  "runs": [
+    {
+      "name": "eval_v2_fixed",
+      "started_at_utc": "2026-11-25T13:13:23.937033+00:00",
+      "command": [
+        "/home/twentysix/.venvs/k5-day14-part6/bin/python",
+        "eval/run_eval.py",
+        "--min-accuracy",
+        "1.0",
+        "--baseline",
+        "reports/eval_v2.json",
+        "--url",
+        "http://localhost:8002",
+        "--out",
+        "reports/eval_v2_fixed.json"
+      ],
+      "environment": {
+        "LLM_MODEL": "mock-llm-small",
+        "MOCK_LATENCY_MS": "120",
+        "MOCK_JITTER_MS": "60",
+        "MOCK_SLOW_MS": "1500",
+        "MOCK_RETRIEVAL_MS": "20",
+        "MOCK_SLOW_RATE": "0.03",
+        "MOCK_ERROR_RATE": "0",
+        "AGENT_VERSION": "v2",
+        "PORT": "8002"
+      },
+      "exit_code": 0,
+      "report_sha256": "382fa9f177745f1c5b76a4698f06fb754fcf7ea5c39a3a5048ac9511313fdbeb"
+    },
+    {
+      "name": "eval_ci",
+      "started_at_utc": "2026-11-25T13:13:28.754684+00:00",
+      "command": [
+        "/home/twentysix/.venvs/k5-day14-part6/bin/python",
+        "eval/run_eval.py",
+        "--min-accuracy",
+        "0.85",
+        "--baseline",
+        "reports/eval_v2_fixed.json",
+        "--url",
+        "http://localhost:8002",
+        "--out",
+        "reports/eval_ci.json"
+      ],
+      "environment": {
+        "LLM_MODEL": "mock-llm-small",
+        "MOCK_LATENCY_MS": "120",
+        "MOCK_JITTER_MS": "60",
+        "MOCK_SLOW_MS": "1500",
+        "MOCK_RETRIEVAL_MS": "20",
+        "MOCK_SLOW_RATE": "0.03",
+        "MOCK_ERROR_RATE": "0",
+        "AGENT_VERSION": "v2",
+        "PORT": "8002"
+      },
+      "exit_code": 0,
+      "report_sha256": "acd3c4af797009e2ec43366463e2c0996280d51eb2ba65290c1495e315e15962"
+    }
+  ],
+  "completed_at_utc": "2026-11-25T13:13:35.397361+00:00"
+}

@@ -1,0 +1,40 @@
+agent-1  | Traceback (most recent call last):
+agent-1  |   File "/home/agent/.local/bin/uvicorn", line 5, in <module>
+agent-1  |     from uvicorn.main import main
+agent-1  | ModuleNotFoundError: No module named 'uvicorn'
+agent-1  | Traceback (most recent call last):
+agent-1  |   File "/home/agent/.local/bin/uvicorn", line 5, in <module>
+agent-1  |     from uvicorn.main import main
+agent-1  | ModuleNotFoundError: No module named 'uvicorn'
+agent-1  | Traceback (most recent call last):
+agent-1  |   File "/home/agent/.local/bin/uvicorn", line 5, in <module>
+agent-1  |     from uvicorn.main import main
+agent-1  | ModuleNotFoundError: No module named 'uvicorn'
+agent-1  | Traceback (most recent call last):
+agent-1  |   File "/home/agent/.local/bin/uvicorn", line 5, in <module>
+agent-1  |     from uvicorn.main import main
+agent-1  | ModuleNotFoundError: No module named 'uvicorn'
+agent-1  | Traceback (most recent call last):
+agent-1  |   File "/home/agent/.local/bin/uvicorn", line 5, in <module>
+agent-1  |     from uvicorn.main import main
+agent-1  | ModuleNotFoundError: No module named 'uvicorn'
+agent-1  | Traceback (most recent call last):
+agent-1  |   File "/home/agent/.local/bin/uvicorn", line 5, in <module>
+agent-1  |     from uvicorn.main import main
+agent-1  | ModuleNotFoundError: No module named 'uvicorn'
+agent-1  | Traceback (most recent call last):
+agent-1  |   File "/home/agent/.local/bin/uvicorn", line 5, in <module>
+agent-1  |     from uvicorn.main import main
+agent-1  | ModuleNotFoundError: No module named 'uvicorn'
+agent-1  | Traceback (most recent call last):
+agent-1  |   File "/home/agent/.local/bin/uvicorn", line 5, in <module>
+agent-1  |     from uvicorn.main import main
+agent-1  | ModuleNotFoundError: No module named 'uvicorn'
+agent-1  | Traceback (most recent call last):
+agent-1  |   File "/home/agent/.local/bin/uvicorn", line 5, in <module>
+agent-1  |     from uvicorn.main import main
+agent-1  | ModuleNotFoundError: No module named 'uvicorn'
+agent-1  | Traceback (most recent call last):
+agent-1  |   File "/home/agent/.local/bin/uvicorn", line 5, in <module>
+agent-1  |     from uvicorn.main import main
+agent-1  | ModuleNotFoundError: No module named 'uvicorn'

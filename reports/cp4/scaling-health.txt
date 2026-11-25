@@ -1,0 +1,12 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0100    110 100    110   0      0  11327      0                              0100    110 100    110   0      0  11239      0                              0100    110 100    110   0      0  11203      0                              0
+HTTP/1.1 200 OK
+Server: nginx/1.31.10
+Date: Wed, 25 Nov 2026 09:37:48 GMT
+Content-Type: application/json
+Content-Length: 110
+Connection: keep-alive
+X-Served-By: 172.19.0.5:8000
+
+{"status":"ok","instance_id":"instance-42585e","uptime_seconds":34.6,"storage":"redis","redis_connected":true}

@@ -1,0 +1,4 @@
+NAME                             IMAGE                          COMMAND                  SERVICE   CREATED          STATUS                    PORTS
+k5-day14-observability-agent-1   k5-day14-observability-agent   "uvicorn app.main:ap…"   agent     22 minutes ago   Up 22 minutes (healthy)   8000/tcp
+k5-day14-observability-agent-2   k5-day14-observability-agent   "uvicorn app.main:ap…"   agent     35 seconds ago   Up 34 seconds (healthy)   8000/tcp
+k5-day14-observability-agent-3   k5-day14-observability-agent   "uvicorn app.main:ap…"   agent     35 seconds ago   Up 34 seconds (healthy)   8000/tcp
