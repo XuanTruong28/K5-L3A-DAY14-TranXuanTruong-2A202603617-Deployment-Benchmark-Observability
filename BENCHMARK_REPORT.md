@@ -89,7 +89,9 @@ Job yêu cầu Exercise 7.3 nằm tại [.github/workflows/eval.yml](.github/wor
 
 ## 4. Observability stack (production)
 
-Đã có Grafana, trace chậm/lỗi, unit test alert SUCCESS, bằng chứng API và ảnh hai alert cùng firing; đã đo lại scaling đúng 1/3 instances. Câu trả lời Exercise 7.4 nằm trong MISSION_ANSWERS.md: dashboard hai instances có p95 295.75 ms, avg xấp xỉ 230 ms; tải mỗi instance khoảng 9–9.5 req/s; input/output khoảng 1400/2150 tokens/s. Các số đọc từ đường biểu đồ là xấp xỉ; đây là workload UI 30 users, khác benchmark headless 100 users. Đã dọn stack local sau khi lưu bằng chứng: [cleanup.txt](reports/cp8/cleanup.txt), [after-cleanup.txt](reports/cp8/after-cleanup.txt) chỉ còn tiêu đề, không còn container của project. Còn kiểm tra cuối và nộp bài.
+Đã có Grafana, trace chậm/lỗi, unit test alert SUCCESS, bằng chứng API và ảnh hai alert cùng firing; đã đo lại scaling đúng 1/3 instances. Câu trả lời Exercise 7.4 nằm trong MISSION_ANSWERS.md. Lần đo bổ sung mới lúc 22:48:20.490177 ngày 25/11/2026 (GMT+7), 2 instances, Locust headless 30 users/ramp-up 5/2 phút: avg 227.395903 ms, p95 292.563739 ms, p99 1799.038462 ms; hai instance 9.436364 và 9.563636 req/s; input/output 1458.345455/761.254545 tokens/s. Các số làm tròn từ [API Prometheus](reports/cp8/dashboard-exact/prometheus.json) bằng đúng truy vấn dashboard tại cùng timestamp ở giây thứ 100; không phải số đọc từ ảnh cũ và không trộn với CSV scaling 100 users. Panel Tokens/s cộng dồn input + output, nên cách đọc output 2150 tokens/s từ ảnh trước là sai và đã được sửa.
+
+Đã dọn stack local sau khi lưu bằng chứng: lần CP8 ban đầu có [cleanup.txt](reports/cp8/cleanup.txt), [after-cleanup.txt](reports/cp8/after-cleanup.txt); lần đo bổ sung có [cleanup.txt](reports/cp8/dashboard-exact/cleanup.txt), [after-cleanup.txt](reports/cp8/dashboard-exact/after-cleanup.txt). Các bảng sau dọn chỉ còn tiêu đề, không còn container của project. Phần GitHub Public và LMS do người học tự hoàn tất.
 
 ### 4.1 Screenshot
 

@@ -1,0 +1,191 @@
+{
+  "started_utc": "2026-11-25T15:46:40.458347+00:00",
+  "captured_unix": 1795621700.490177,
+  "captured_utc": "2026-11-25T15:48:20.490177+00:00",
+  "workload": "NEW run; 2 agents, 30 users, ramp-up 5/s, 2 minutes; capture at ~100s",
+  "command": [
+    "docker",
+    "compose",
+    "-p",
+    "k5-day14-observability",
+    "run",
+    "--rm",
+    "--no-deps",
+    "locust",
+    "-f",
+    "/mnt/locust/locustfile.py",
+    "--host",
+    "http://nginx",
+    "--headless",
+    "-u",
+    "30",
+    "-r",
+    "5",
+    "-t",
+    "2m"
+  ],
+  "results": [
+    {
+      "panel": "Instances up",
+      "legend": "",
+      "query": "sum(up{job=\"agent\"})",
+      "response": {
+        "status": "success",
+        "data": {
+          "resultType": "vector",
+          "result": [
+            {
+              "metric": {},
+              "value": [
+                1795621700.49,
+                "2"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "panel": "Latency /ask — p50 / p95 / p99",
+      "legend": "p50",
+      "query": "histogram_quantile(0.50, sum by (le) (rate(http_request_duration_seconds_bucket{job=\"agent\", route=\"/ask\"}[1m])))",
+      "response": {
+        "status": "success",
+        "data": {
+          "resultType": "vector",
+          "result": [
+            {
+              "metric": {},
+              "value": [
+                1795621700.49,
+                "0.17835595776772248"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "panel": "Latency /ask — p50 / p95 / p99",
+      "legend": "p95",
+      "query": "histogram_quantile(0.95, sum by (le) (rate(http_request_duration_seconds_bucket{job=\"agent\", route=\"/ask\"}[1m])))",
+      "response": {
+        "status": "success",
+        "data": {
+          "resultType": "vector",
+          "result": [
+            {
+              "metric": {},
+              "value": [
+                1795621700.49,
+                "0.2925637393767706"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "panel": "Latency /ask — p50 / p95 / p99",
+      "legend": "p99",
+      "query": "histogram_quantile(0.99, sum by (le) (rate(http_request_duration_seconds_bucket{job=\"agent\", route=\"/ask\"}[1m])))",
+      "response": {
+        "status": "success",
+        "data": {
+          "resultType": "vector",
+          "result": [
+            {
+              "metric": {},
+              "value": [
+                1795621700.49,
+                "1.7990384615384616"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "panel": "Latency /ask — p50 / p95 / p99",
+      "legend": "avg",
+      "query": "sum(rate(http_request_duration_seconds_sum{job=\"agent\", route=\"/ask\"}[1m])) / sum(rate(http_request_duration_seconds_count{job=\"agent\", route=\"/ask\"}[1m]))",
+      "response": {
+        "status": "success",
+        "data": {
+          "resultType": "vector",
+          "result": [
+            {
+              "metric": {},
+              "value": [
+                1795621700.49,
+                "0.22739590337321314"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "panel": "Tokens/s",
+      "legend": "{{type}}",
+      "query": "sum by (type) (rate(llm_tokens_total{job=\"agent\"}[1m]))",
+      "response": {
+        "status": "success",
+        "data": {
+          "resultType": "vector",
+          "result": [
+            {
+              "metric": {
+                "type": "input"
+              },
+              "value": [
+                1795621700.49,
+                "1458.3454545454545"
+              ]
+            },
+            {
+              "metric": {
+                "type": "output"
+              },
+              "value": [
+                1795621700.49,
+                "761.2545454545455"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "panel": "Requests/s theo instance",
+      "legend": "{{instance}}",
+      "query": "sum by (instance) (rate(http_requests_total{job=\"agent\", route=\"/ask\"}[1m]))",
+      "response": {
+        "status": "success",
+        "data": {
+          "resultType": "vector",
+          "result": [
+            {
+              "metric": {
+                "instance": "172.19.0.6:8000"
+              },
+              "value": [
+                1795621700.49,
+                "9.436363636363637"
+              ]
+            },
+            {
+              "metric": {
+                "instance": "172.19.0.4:8000"
+              },
+              "value": [
+                1795621700.49,
+                "9.563636363636363"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
